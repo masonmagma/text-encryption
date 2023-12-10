@@ -29,6 +29,8 @@ MODULE USAGE
 - To run this script on its own use powershell and navigate to the directory you have the .py script saved in:
 ex: cd .\Desktop\python_scripts\
 
+NOTE: whichever directory you are running the script from is where your encrypted files will be saved.(recommend running script in same directory as the .py file)
+
 - To run the python script and access the CLI interface use the following command:
 python .\secret_message.py
 
@@ -36,5 +38,15 @@ The script will then prompt you if you want to create a new key or enter your ow
 -respond with "y" or "n" and hit enter to confirm your choice
 
 -When you generate a new key make sure to copy it with ctrl+c and save it somewhere safe. This is important for later decrypting messages you have encrypted with your key.
+-After you have generated or inputted a key you will then be prompted to encrypt or decrypt a message by entering (e/d)
+
+-If you choose to encrypt a file you will then be prompted to input your secret message then the filename.
+-after this your encrypted message will be created and the program will promptly close
+
+NOTE: when creating the filename of your encrypted message you are not specified on which filetype to use. I recommend creating as .txt file or not specifing a file type that way its contents can't be opened or modified. (ex. secretmessage)
+
+-if you choose to decrypt a message you will be prompted to enter the exact filename of your encrypted message. Make sure it is saved in the same directory you launched your .py script from so it can find it.
+-if you have entered the correct key required to decrypt the message a print statement will then be made sharing the secret encrypted message. If an incorrect key was used The program will generate and error and specify an incorrect key was used.
+-After this the program will promptly shut down.
 
 
