@@ -49,4 +49,8 @@ NOTE: when creating the filename of your encrypted message you are not specified
 -if you have entered the correct key required to decrypt the message a print statement will then be made sharing the secret encrypted message. If an incorrect key was used The program will generate and error and specify an incorrect key was used.
 -After this the program will promptly shut down.
 
+REFERENCES:
+https://cryptography.io/en/latest/fernet/
+
+
 
