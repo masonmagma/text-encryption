@@ -55,6 +55,11 @@ NOTE: when creating the filename of your encrypted message you are not specified
 
 REFERENCES:
 https://cryptography.io/en/latest/fernet/
+https://stackoverflow.com/questions/18367007/python-how-to-write-to-a-binary-file
+https://chat.openai.com/
+https://www.tutorialspoint.com/how-to-encrypt-and-decrypt-data-in-python
+
+
 
 
 
