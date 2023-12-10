@@ -1,14 +1,16 @@
 python CLI message encryption/decryption module
 
+Mason Lava 000829168
+
+DESCRIPTION
+
 Hello and welcome to the README.md file of my text encryption/decryption module.
+This project uses pythons built in cryptography module to allow a user to generate and use a key to either encrypt or decrypt a secret message via a command line interface. This message can only be decrypted by being able to supply the correct key cipher to obtain the orginal plaintext message originally encrypted. From the CLI the interface it can accept parameters from the user such as a message, file, and secret key. The program also allows a user to request generating a new secret key which uses the Fernet.generate_key() function. This creates a Fernet base64 encoded key that can be used within the program for encrypting and decrypting messages. 
 
-- This project uses pythons built in cryptography module to allow a user to generate and use a key to either encrypt or decrypt a secret message.
-- This message can only be decrypted by being able to supply the correct key cipher to obtain the orginal plaintext message originally encrypted.
-
-Install requirements
+INSTALL REQUIREMENTS
 - Using this module requires pip and pythons cryptography module which may not be installed automatically.
 
-Install pip
+INSTALL PIP
 - to install pip perform the following command in visual studios code terminal or powershell: python -m ensurepip --default-pip
 
 You can also install pip from the python installer here --> https://www.python.org/downloads/
@@ -20,7 +22,7 @@ Installing the cryptography module
 - pip install cryptography
 - pip install --upgrade cryptography
 
-Module Usage
+MODULE USAGE
 
 - This script secret_message.py can be imported as a module into another script or ran by itself to encrypt and decrypt messages.
 
@@ -33,6 +35,6 @@ python .\secret_message.py
 The script will then prompt you if you want to create a new key or enter your own:
 -respond with "y" or "n" and hit enter to confirm your choice
 
--When you generate a new key make sure to copy it with ctrl+c and save it somewhere safe. This is important for later decrypting messages you encrypt with that secret key.
+-When you generate a new key make sure to copy it with ctrl+c and save it somewhere safe. This is important for later decrypting messages you have encrypted with your key.
 
 
